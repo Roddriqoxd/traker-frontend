@@ -5,6 +5,7 @@ section {
     justify-content: center;
     align-items: center;
     main {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
         form {
             width: 500px;
             height: 500px;
@@ -12,6 +13,7 @@ section {
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            gap: 10px;
             .example-full-width{
                 width: 90%;
             }

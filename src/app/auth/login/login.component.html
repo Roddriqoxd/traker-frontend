@@ -1,6 +1,7 @@
 <section>
     <main>
         <form class="example-form">
+            <h3>Login TT</h3>
             <mat-form-field class="example-full-width">
                 <mat-label>Email</mat-label>
                 <input type="email" matInput [formControl]="email" placeholder="Ex. pat@example.com">
@@ -15,11 +16,8 @@
             <mat-form-field class="example-full-width">
                 <mat-label>password</mat-label>
                 <input type="password" matInput [formControl]="password" placeholder="Your password here!">
-                @if (password.hasError('email') && !password.hasError('required')) {
-                <mat-error>Please enter a valid email address</mat-error>
-                }
                 @if (password.hasError('required')) {
-                <mat-error>Email is <strong>required</strong></mat-error>
+                <mat-error>password is <strong>required</strong></mat-error>
                 }
             </mat-form-field>
 

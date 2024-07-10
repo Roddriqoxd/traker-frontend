@@ -15,6 +15,7 @@ export class LoginComponent {
 
 
 
+    constructor() {}
 
     email= new FormControl('', [Validators.required, Validators.email])
     password= new FormControl('', [Validators.required])
